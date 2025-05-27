@@ -56,13 +56,9 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // Use environment port or default to 5000
-  const port = process.env.PORT || 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
+  // Use environment port or default to 3000 for dev, 5000 for production
+  const port = Number(process.env.PORT) || (process.env.NODE_ENV === "development" ? 3000 : 5000);
+  server.listen(port, () => {
     log(`serving on port ${port}`);
   });
 })();

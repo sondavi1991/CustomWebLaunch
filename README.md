@@ -60,20 +60,23 @@ docker run -p 5000:5000 site-sob-medida
 docker-compose up -d
 ```
 
-## 🌐 Deploy no Coolify
+## 🌐 Deploy no Coolify com Nixpacks
 
 1. **Crie um novo projeto no Coolify**
-2. **Configure o repositório Git**
-3. **Defina as variáveis de ambiente** (se necessário)
-4. **Configure o Dockerfile**: O projeto já inclui um Dockerfile otimizado
-5. **Deploy**: Coolify irá automaticamente fazer o build e deploy
+2. **Configure o repositório Git** com seus arquivos
+3. **Selecione Nixpacks** como build pack
+4. **Configure as variáveis de ambiente**:
+   - `NODE_ENV=production`
+   - `PORT=5000`
+5. **Deploy**: Coolify usará automaticamente o `nixpacks.toml`
 
-### Configurações Recomendadas para Coolify:
+### Configurações do Nixpacks:
 
-- **Port**: 5000
-- **Build Command**: `npm run build`
-- **Start Command**: `npm start`
-- **Health Check**: `http://localhost:5000`
+O arquivo `nixpacks.toml` já está configurado com:
+- **Node.js 20**: Versão LTS mais recente
+- **Build automático**: `npm run build`
+- **Start automático**: `npm start`
+- **Port**: 5000 (configurável via ambiente)
 
 ## 📱 Funcionalidades do Formulário
 
