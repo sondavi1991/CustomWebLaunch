@@ -259,10 +259,7 @@ Enviado através do site Site sob Medida`;
             <p className="text-muted-foreground text-sm">
               Ao enviar, você será redirecionado para nosso WhatsApp para continuarmos a conversa
             </p>
-            <div className="flex items-center justify-center mt-4 space-x-2 text-green-400">
-              <SiWhatsapp className="text-lg" />
-              <span className="text-sm font-medium">+55 16 98189-4598</span>
-            </div>
+
           </motion.div>
         </div>
       </div>
