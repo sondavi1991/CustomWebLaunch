@@ -68,15 +68,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
           
-          <motion.div
-            className="absolute bottom-10 left-1/4"
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-          >
-            <div className="w-16 h-16 gradient-bg-accent rounded-lg flex items-center justify-center shadow-2xl">
-              <Search className="text-white text-xl" size={24} />
-            </div>
-          </motion.div>
+
         </div>
       </div>
     </section>

@@ -24,7 +24,7 @@ export default function Footer() {
             >
               <SiWhatsapp className="text-xl" />
             </a>
-            <span className="text-muted-foreground text-sm">© 2024 Site sob Medida. Em breve.</span>
+            <span className="text-muted-foreground text-sm">© 2025 Site sob Medida.</span>
           </div>
         </div>
       </div>
