@@ -1,4 +1,5 @@
 import { Code } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Header() {
   return (
@@ -13,19 +14,22 @@ export default function Header() {
               Site sob Medida
             </span>
           </div>
-          <div className="hidden md:flex items-center space-x-6">
-            <a 
-              href="#sobre" 
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              Sobre
-            </a>
-            <a 
-              href="#contato" 
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              Contato
-            </a>
+          <div className="flex items-center space-x-6">
+            <div className="hidden md:flex items-center space-x-6">
+              <a 
+                href="#sobre" 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                Sobre
+              </a>
+              <a 
+                href="#contato" 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                Contato
+              </a>
+            </div>
+            <ThemeToggle />
           </div>
         </nav>
       </div>

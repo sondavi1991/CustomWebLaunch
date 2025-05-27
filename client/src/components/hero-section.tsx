@@ -16,7 +16,7 @@ export default function HeroSection() {
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-foreground via-foreground/80 to-foreground/60 bg-clip-text text-transparent dark:from-white dark:via-gray-200 dark:to-gray-400">
               Site sob Medida
             </span>
             <br />
