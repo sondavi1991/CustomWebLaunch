@@ -80,7 +80,7 @@ Enviado através do site Site sob Medida`;
 
       // Wait a moment then redirect to WhatsApp
       setTimeout(() => {
-        const whatsappUrl = `https://wa.me/5516981894598?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/5516997112388?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
         
         // Reset form after redirect
