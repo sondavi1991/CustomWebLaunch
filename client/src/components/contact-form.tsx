@@ -64,7 +64,7 @@ export default function ContactForm() {
 
 👤 *Nome:* ${data.fullName}
 📧 *E-mail:* ${data.email}
-🏢 *Nicho:* ${nicheOptions.find(option => option.value === data.niche)?.label || data.niche}
+🏢 *Nicho desejado:* ${data.niche}
 
 💬 *Comentário:*
 ${data.comment || 'Nenhum comentário adicional'}
@@ -181,22 +181,15 @@ Enviado através do site Site sob Medida`;
                     <FormItem>
                       <FormLabel className="flex items-center text-muted-foreground">
                         <Building className="mr-2 text-primary" size={16} />
-                        Nicho do seu negócio *
+                        Que nicho deseja encontrar no site? *
                       </FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger className="bg-muted/50 border-border/50 focus:border-primary focus:ring-primary">
-                            <SelectValue placeholder="Selecione seu nicho" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {nicheOptions.map((option) => (
-                            <SelectItem key={option.value} value={option.value}>
-                              {option.label}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
+                      <FormControl>
+                        <Input
+                          placeholder="Ex: E-commerce, Serviços, Saúde, Educação, Tecnologia..."
+                          className="bg-muted/50 border-border/50 focus:border-primary focus:ring-primary"
+                          {...field}
+                        />
+                      </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
